@@ -20,18 +20,6 @@ dic = {
     'city' : []
 }
 
-#address can be on multiple lines -> splitlines doesn't return the desired output.
-
-dic = {
-    'id' : [],
-    'name' : [],
-    'sector' : [],
-    'email' : [],
-    'tel' : [],
-    'address' : [],
-    'city' : []
-}
-
 k = 1
 for res in results:
     dic['id'].append(k)
