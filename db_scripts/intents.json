@@ -1,48 +1,376 @@
 {"intents": [
     {"tag": "greeting",
-     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-     "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+     "patterns": 
+        [
+            "hey", 
+            "hello", 
+            "hi", 
+            "Hola", 
+            "hello there", 
+            "good morning", 
+            "good evening", 
+            "moin", 
+            "hey there",
+            "let's go",
+            "hey dude", 
+            "goodmorning",
+            "goodevening",
+            "good afternoon",
+            "is anyone there?",
+            "Good day"
+        ],
+     "responses": 
+        [
+            "Hello!", 
+            "Good to see you", 
+            "Hi there, how can I help?"
+        ],
      "context": [""]
     },
     {"tag": "goodbye",
-     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "patterns": 
+        [   
+            "cu",
+            "good by",
+            "cee you later",
+            "good night",
+            "bye",
+            "goodbye",
+            "have a nice day",
+            "see you around",
+            "bye bye",
+            "see you later",
+            "ciao",
+            "see you later, ciao",
+            "nice chatting with you, bye", 
+            "till next time"
+        ],
+     "responses": 
+        [
+            "See you!", 
+            "Have a nice day", 
+            "Bye! Come back again soon."
+        ],
      "context": [""]
     },
     {"tag": "thanks",
-     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
-     "responses": ["Happy to help!", "Any time!", "My pleasure"],
+     "patterns": 
+        [
+            "thanks", 
+            "thank you", 
+            "that's helpful", 
+            "awesome, thanks", 
+            "thanks for helping me"
+        ],
+     "responses": 
+        [
+            "Happy to help!", 
+            "Any time!", 
+            "My pleasure"
+        ],
      "context": [""]
     },
     {"tag": "noanswer",
      "patterns": [],
-     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+     "responses": 
+        [
+            "Sorry, can't understand you", 
+            "Please give me more info", 
+            "Not sure I understand"
+        ],
      "context": [""]
     },
     {"tag": "options",
-     "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
-     "responses": ["I can answer your questions about diabetes and look for nearby endocrinologists", "Answering diabetes related questions and looking for nearby endocrinologists."],
+     "patterns": 
+        [
+            "How can help me?", 
+            "What you can do?", 
+            "What help you provide?", 
+            "How you can be helpful?", 
+            "What support is offered"
+        ],
+     "responses": 
+        [
+            "I can answer your questions about diabetes and look for nearby endocrinologists", 
+            "Answering diabetes related questions and looking for nearby endocrinologists."
+        ],
      "context": [""]
     },
-    {"tag": "pharmacy_search",
-     "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
-     "responses": ["Please provide pharmacy name"],
-     "context": ["search_pharmacy_by_name"]
+    {"tag": "get_diabetes_types",
+    "patterns" : 
+        [
+            "what are the types of diabetes", 
+            "how many types of diabetes are there", 
+            "can you explain what are the types of diabetes"
+        ],
+    "responses" : 
+        [
+            "Type 1\n\nIn type 1 diabetes, the body does not produce insulin.\n\n\n\nType 2:\n\nType 2 diabetes is the most common form of diabetes—and it means that your body doesn’t use insulin properly.\n\n\n\nGestational diabetes:\n\nGestational diabetes is diabetes diagnosed for the first time during pregnancy (gestation).\n\n\nPrediabetes:\n\nWhen it comes to prediabetes, there are no clear symptoms—so you may have it and not know it. Here’s why that’s important: before people develop type 2 diabetes, they almost always have prediabetes—blood sugar levels that are higher than normal but not yet high enough to be diagnosed as diabetes.",
+            "Types of Diabetes\n\n\nType 1 Diabetes:\nType 1 diabetes is thought to be caused by an autoimmune reaction (the body attacks itself by mistake) that stops your body from making insulin.\n\n\nType 2 Diabetes:\nWith type 2 diabetes, your body doesn’t use insulin well and can’t keep blood sugar at normal levels.\n\n\nGestational Diabetes:\nGestational diabetes develops in pregnant women who have never had diabetes. If you have gestational diabetes, your baby could be at higher risk for health problems. Gestational diabetes usually goes away after your baby is born but increases your risk for type 2 diabetes later in life. Your baby is more likely to have obesity as a child or teen, and more likely to develop type 2 diabetes later in life too.\n\n\nPrediabetes:\n With prediabetes, blood sugar levels are higher than normal, but not high enough yet to be diagnosed as type 2 diabetes.","Type 1 diabetes:\n\nType 1 diabetes is characterized by deficient insulin production and requires daily administration of insulin.\n\n\nType 2 diabetes:\n\nType 2 diabetes results from the body’s ineffective use of insulin.\n\n\nGestational diabetes:\n\nGestational diabetes occurs during pregnancy.Women with gestational diabetes are at an increased risk of complications during pregnancy and at delivery. These women and possibly their children are also at increased risk of type 2 diabetes in the future.\n\n\nPrediabetes:\n\nWhen it comes to prediabetes, there are no clear symptoms—so you may have it and not know it. Here’s why that’s important: before people develop type 2 diabetes, they almost always have prediabetes—blood sugar levels that are higher than normal but not yet high enough to be diagnosed as diabetes." 
+        ],
+    "context": [""]
     },
-    {"tag": "search_pharmacy_by_name",
-     "patterns": [],
-     "responses": ["Loading pharmacy details"],
-     "context": [""]
+    {"tag" : "diabetes_symptoms",
+    "patterns" : 
+        [
+            "what are the symptoms of diabetes",
+            "what are the signs of diabetes",
+            "what are the indicators of diabetes",
+            "list the symptoms of diabetes"
+        ],
+    "responses" : 
+        [
+            "The general symptoms of diabetes include:\n  -Increased hunger\n  -Increased thirst\n  -Weight loss\n  -Frequent urination\n  -Blurry vision\n  -Extreme fatigue\n  -Sores that don’t heal"
+        ],
+    "context" : [""]
     },
-    {"tag": "hospital_search",
-     "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
-     "responses": ["Please provide hospital name or location"],
-     "context": ["search_hospital_by_params"]
+    {"tag" : "type1_symptoms",
+    "patterns" : 
+        [
+            "what are the symptoms of type 1 diabetes",
+            "what are the signs of type 1 diabetes",
+            "what are the indicators of type 1 diabetes",
+            "list the symptoms of type 1 diabetes", 
+            "what are the symptoms of type1",
+            "what are the signs of type 1",
+            "what are the indicators of type 1",
+            "list the symptoms of type 1"
+        ],
+    "responses" : 
+        [
+            "Type 1 diabetes signs and symptoms can appear relatively suddenly and may include:\n  -Increased thirst\n  -Frequent urination\n  -Bed-wetting in children who previously didn't wet the bed during the night\n  -Extreme hunger\n  -Unintended weight loss\n  -Irritability and other mood changes\n  -Fatigue and weakness\n  -Blurred vision"
+        ],
+    "context" : [""]
     },
-    {"tag": "search_hospital_by_params",
-     "patterns": [],
-     "responses": ["Please provide hospital type"],
-     "context": ["search_hospital_by_type"]
+    {"tag" : "type2_symptoms",
+    "patterns" : 
+        [
+            "what are the symptoms of type 2 diabetes",
+            "what are the signs of type 2 diabetes",
+            "what are the indicators of type 2 diabetes",
+            "list the symptoms of type 2 diabetes", 
+            "what are the symptoms of type2",
+            "what are the signs of type 2",
+            "what are the indicators of type 2",
+            "list the symptoms of type 2"
+        ],
+    "responses" : 
+        [
+            "Signs and symptoms of type 2 diabetes often develop slowly. In fact, you can be living with type 2 diabetes for years and not know it. When signs and symptoms are present, they may include:\n  -Increased thirst\n  -Frequent urination\n  -Increased hunger\n  -Unintended weight loss\n  -Fatigue\n  -Blurred vision\n  -Slow-healing sores\n  -Frequent infections\n  -Numbness or tingling in the hands or feet\n  -Areas of darkened skin, usually in the armpits and neck"
+        ],
+    "context" : [""]
+    },
+    {"tag" : "define_diabetes",
+    "patterns" : 
+        [
+            "what is diabetes",
+            "define diabetes", 
+            "what's the meaning of diabetes", 
+            "is diabetes chronic", 
+            "what does diabetes mean", 
+            "is diabetes a lifelong disease",
+            "is diabetes a disease"
+        ],
+    "responses" : 
+        [
+            "Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy.\nMost of the food you eat is broken down into sugar (also called glucose) and released into your bloodstream. When your blood sugar goes up, it signals your pancreas to release insulin. Insulin acts like a key to let the blood sugar into your body’s cells for use as energy.\nIf you have diabetes, your body either doesn’t make enough insulin or can’t use the insulin it makes as well as it should. When there isn’t enough insulin or cells stop responding to insulin, too much blood sugar stays in your bloodstream. Over time, that can cause serious health problems, such as heart disease, vision loss, and kidney disease.\nThere isn’t a cure yet for diabetes, but losing weight, eating healthy food, and being active can really help. Taking medicine as needed, getting diabetes self-management education and support, and keeping health care appointments can also reduce the impact of diabetes on your life.",
+            "Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces. Insulin is a hormone that regulates blood sugar. Hyperglycaemia, or raised blood sugar, is a common effect of uncontrolled diabetes and over time leads to serious damage to many of the body's systems, especially the nerves and blood vessels.","Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy. Sometimes your body doesn’t make enough—or any—insulin or doesn’t use insulin well. Glucose then stays in your blood and doesn’t reach your cells.\nOver time, having too much glucose in your blood can cause health problems. Although diabetes has no cure, you can take steps to manage your diabetes and stay healthy.\nSometimes people call diabetes “a touch of sugar” or “borderline diabetes.” These terms suggest that someone doesn’t really have diabetes or has a less serious case, but every case of diabetes is serious."
+        ],
+    "context" : [""]
+    },
+    {"tag" : "define_hypoglycemia",
+    "patterns" : 
+        [
+            "What's hypoglycemia?",
+            "define hypoglycemia", 
+            "what's the meaning of hypoglycemia?",
+            "what does hypoglycemia mean?",
+            "Explain hypoglycemia"
+        ],
+    "responses" : 
+        [
+            "Hypoglycemia occurs when your blood sugar level drops below your target range. Ask your doctor what's considered a low blood sugar level for you. Blood sugar levels can drop for many reasons, including skipping a meal, eating fewer carbohydrates than called for in your meal plan, getting more physical activity than normal or injecting too much insulin."
+        ],
+    "context" : [""]
+    },
+    {"tag" : "hypoglycemia_symptoms",
+    "patterns" : 
+        [
+            "what are the symptoms of hypoglycemia",
+            "what are the signs of hypoglycemia",
+            "what are the indicators of hypoglycemia",
+            "list the symptoms of hypoglycemia", 
+            "what are the symptoms of low blood sugar",
+            "what are the signs of low blood sugar",
+            "what are the indicators of low blood sugar",
+            "list the symptoms of low blood sugar"
+        ],
+    "responses" : 
+        [
+            "Early signs and symptoms of low blood sugar include:\n  -Sweating\n  -Shaking\n  -Hunger\n  -Dizziness or lightheadedness\n  -Rapid or irregular heart rate\n  -Fatigue\n  -Headaches\n  -Blurred vision\n  -Irritability\n\nLater signs and symptoms of low blood sugar, which can sometimes be mistaken for alcohol intoxication in teens and adults, include:\n  -Lethargy\n  -Confusion\n  -Behavior changes, sometimes dramatic\n  -Poor coordination\n  -Convulsions"
+        ],
+    "context" : [""]
+    },
+    {"tag" : "treat_hypoglycemia",
+    "patterns" : 
+        [
+            "what is the best treatment for hypoglycemia?",
+            "how to treat hypoglycemia?",
+            "how to deal with hypoglycemia?",
+            "what's the treatment involved in hypoglycemia?",
+            "what's the cure of hypoglycemia?",
+            "How to manage hypoglycemia",
+            "what is the best treatment for low blood sugar?",
+            "how can I treat low blood sugar?",
+            "how to deal with low blood sugar?",
+            "what's the treatment involved in low blood sugar?",
+            "what's the cure of low blood sugar?",
+            "How to manage low blood sugar"
+        ],
+    "responses" : 
+        [
+            "If you have a low blood sugar reading:\n  -Have 15 to 20 grams of a fast-acting carbohydrate, such as fruit juice, glucose tablets, hard candy, regular (not diet) soda or another source of sugar. Avoid foods with added fat, which don't raise blood sugar as quickly because fat slows sugar absorption.\n  -Retest your blood sugar in about 15 minutes to make sure it's normal.\n  -If it's still low, have another 15 to 20 grams of carbohydrate and retest in another 15 minutes.\n  -Repeat until you get a normal reading.\n  -Eat a mixed food source, such as peanut butter and crackers, to help stabilize your blood sugar."
+        ],
+    "context" : [""]
+    },
+    {"tag" : "diabetes_risk_factors",
+    "patterns" : 
+        [
+            "what are the risks that may lead to diabetes",
+            "what factors lead to diabetes",
+            "what are the risk factors for diabetes", 
+            "what are the factors for diabetes",
+            "What increases the risk of diabetes",
+            "what are the contributing factors to diabetes",
+            "what are the contributing factors to this disease",
+            "what factors contribute to diabetes"
+        ],
+    "responses" : 
+        [
+            "Risk factors for diabetes depend on the type of diabetes.\nYour chances of having prediabetes go up if you:\nAre 45 or older\nHave a parent, brother or sister with diabetes\nAre overweight\nAre physically inactive\nHave high blood pressure or take medicine for high blood pressure\nHave low HDL cholesterol and/or high triglycerides\nHad diabetes during pregnancy\nHave been diagnosed with polycystic ovary syndrome\n\nRisk factors for type 1 diabetes are not as clear as for prediabetes and type 2 diabetes. Known risk factors include:\nFamily history: Having a parent, brother, or sister with type 1 diabetes.\nAge: You can get type 1 diabetes at any age, but it’s more likely to develop when you’re a child, teen, or young adult.\nCurrently, no one knows how to prevent type 1 diabetes.\n\nYou’re at risk for developing type 2 diabetes if you:\nHave prediabetes\nAre overweight\nAre 45 years or older\nHave a parent, brother, or sister with type 2 diabetes\nAre physically active less than 3 times a week\nHave ever had gestational diabetes (diabetes during pregnancy) or given birth to a baby who weighed more than 9 pounds\n\nYou’re at risk for developing gestational diabetes (diabetes while pregnant) if you:\n  Had gestational diabetes during a previous pregnancy\nHave given birth to a baby who weighed more than 9 pounds\n  Are overweight\nAre more than 25 years old\nHave a family history of type 2 diabetes\nHave a hormone disorder called polycystic ovary syndrome (PCOS)",
+            "Type 1 : The main things that lead to it are:\n  Family history. If you have relatives with diabetes, chances are higher that you’ll get it, too. Anyone who has a mother, father, sister, or brother with type 1 diabetes should get checked. A simple blood test can diagnose it.\n  Diseases of the pancreas. They can slow its ability to make insulin.\n  Infection or illness. Some infections and illnesses, mostly rare ones, can damage your pancreas.\n\n\nType 2 : The main things that lead to it are:\n  Obesity or being overweight. Research shows this is a top reason for type 2 diabetes. Because of the rise in obesity among U.S. children, this type is affecting more teenagers.\n  Impaired glucose tolerance.Prediabetes is a milder form of this condition. It can be diagnosed with a simple blood test. If you have it, there’s a strong chance you’ll get type 2 diabetes.\n  Insulin resistance.Type 2 diabetes often starts with cells that are resistant to insulin. That means your pancreas has to work extra hard to make enough insulin to meet your body's needs.\n\n\nGestational : Things that can lead to gestational diabetes include:\n  Obesity or being overweight. Extra pounds can lead to gestational diabetes.\n  Glucose intolerance. Having glucose intolerance or gestational diabetes in the past makes you more likely to get it again.\n  Family history. If a parent or sibling has had gestational diabetes, you're more likely to get it.\n  Age. The older you are when you get pregnant, the higher your chances are."
+        ],
+    "context" : [""]
+    }, 
+    {"tag" : "diabetes_treatment",
+    "patterns" : 
+        [
+            "what is the best treatment for diabetes?",
+            "how can I treat diabetes?",
+            "how to deal with diabetes?",
+            "what's the treatment involved in diabetes?",
+            "what's the cure of diabetes?",
+            "How to manage diabetes"
+        ],
+    "responses" : 
+        [
+            "Depending on what type of diabetes you have, blood sugar monitoring, insulin and oral medications may play a role in your treatment. Eating a healthy diet, maintaining a healthy weight and participating in regular activity also are important factors in managing diabetes.\nFor type 1 diabetes, insulin is the main treatment as it replaces the hormone your body isn’t able to produce.\n The treatment of type 2 diabetes involves primarily diet and exercise and monitoring of your blood sugar.  If lifestyle changes aren’t enough to lower your blood sugar, you’ll need to take medication.",
+            "Treatment for type 1 diabetes involves insulin injections or the use of an insulin pump, frequent blood sugar checks, and carbohydrate counting. Treatment of type 2 diabetes primarily involves lifestyle changes, monitoring of your blood sugar, along with diabetes medications, insulin or both."
+        ],
+    "context" : [""]
+    },
+    {"tag" : "type1_treatment",
+    "patterns" : 
+        [
+            "what's the treatment of type 1 diabetes",
+            "what's the cure of type 1 diabetes",
+            "how to deal with type 1 diabetes",
+            "how to manage type 1 diabetes",
+            "how to treat type 1 diabetes",
+            "is there a cure for type 1 diabetes"
+        ],
+    "responses" : 
+        [
+            "Treatment for type 1 diabetes involves insulin injections or the use of an insulin pump, frequent blood sugar checks, and carbohydrate counting.",
+            "Treatment for type 1 diabetes includes:\n  -Taking insulin\n  -Carbohydrate, fat and protein counting\n  -Frequent blood sugar monitoring\n  -Eating healthy foods\n  -Exercising regularly and maintaining a healthy weight"
+        ],
+    "context" : [""]
+    },
+    {"tag" : "type2_treatment",
+    "patterns" : 
+        [
+            "what's the treatment of type 2 diabetes",
+            "what's the cure of type 2 diabetes",
+            "how to deal with type 2 diabetes",
+            "how to manage type 2 diabetes",
+            "how to treat type 2 diabetes",
+            "is there a cure for type 2 diabetes"
+        ],
+    "responses" : 
+        [
+            "Management of type 2 diabetes includes:\n  -Healthy eating\n  -Regular exercise\n  -Weight loss\n  -Possibly, diabetes medication or insulin therapy\n  -Blood sugar monitoring\n\nThese steps will help keep your blood sugar level closer to normal, which can delay or prevent complications."
+        ],
+    "context" : [""]
+    },
+    {"tag" : "change_lifestyle",
+    "patterns" : 
+        [
+            "How can I change my lifestyle to control diabetes",
+            "what are some lifestyle changes that can help control diabetes",
+            "what are the changes in lifestyle that can help treat diabetes",
+            "can we manage diabetes by changing our lifestyle"
+        ],
+    "responses" : 
+        [
+            "Working closely with your doctor, you can manage your diabetes by focusing on making changes in your daily life.\n\n  -Eat healthy foods. Choose foods lower in fat and calories and higher in fiber. Focus on fruits, vegetables and whole grains. Strive for variety to prevent boredom.\n  -Get more physical activity. Aim for about 30 minutes of moderate aerobic activity on most days of the week, or at least 150 minutes of moderate aerobic activity a week.\n  -Lose excess pounds. If you're overweight, losing even 7% of your body weight — for example, 14 pounds (6.4 kilograms) if you weigh 200 pounds (90.7 kilograms) — can reduce the risk of diabetes.\nDon't try to lose weight during pregnancy, however. Talk to your doctor about how much weight is healthy for you to gain during pregnancy.\nTo keep your weight in a healthy range, focus on permanent changes to your eating and exercise habits. Motivate yourself by remembering the benefits of losing weight, such as a healthier heart, more energy and improved self-esteem."
+        ],
+    "context" : [""]
+    },
+    {"tag" : "define_a1c",
+    "patterns" : 
+        [
+            "what is A1C test",
+            "define A1C test", 
+            "what's the meaning of A1C test", 
+            "what does A1C test mean",
+            "Explain A1C test"
+        ],
+    "responses" : 
+        [
+            "The A1C (also called HbA1c) is a blood test shows how blood sugar levels were controlled over the previous two to three months. It should be done by your doctor at least twice a year. Aim for a level below 6.5. "
+        ],
+    "context" : [""]
+    },
+    {"tag" : "diabetes_test",
+    "patterns" : 
+        [
+            "How do I test for diabetes",
+            "what are the tests for diabetes",
+            "list the tests available for diabetes"
+        ],
+    "responses" : 
+        [
+            "You are considered to have diabetes when either :\n  -your A1C test is 6.5% or greater \n  -your fasting blood glucose is 126 mg/dl or greater \n  -your oral glucose tolerance test is 200 mg/dl or greater"
+        ],
+    "context" : [""]
+    },
+    {"tag" : "bot_challenge",
+    "patterns" : 
+        [
+            "are you a bot?",
+            "are you a human?",
+            "am I talking to a bot?",
+            "am I talking to a human?"
+        ],
+    "responses" : 
+        [
+            "I am a Melli, a chatbot"
+        ],
+    "context" : [""]
+    },
+    {"tag" : "bot_challenge",
+    "patterns" : 
+        [
+            "are you a bot?",
+            "are you a human?",
+            "am I talking to a bot?",
+            "am I talking to a human?"
+        ],
+    "responses" : 
+        [
+            "I am a Melli, a chatbot"
+        ],
+    "context" : [""]
     }
 ]
 }
