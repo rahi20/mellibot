@@ -433,6 +433,20 @@
         ],
     "context" : [""]
     },
+    {"tag" : "insulin_types",
+    "patterns" : 
+        [
+            "what are the types of insulin",
+            "How many types of insulin are there?",
+            "what are the different types of insulin",
+            "is all insulin the same"
+        ],
+    "responses" : 
+        [
+            "There are four types of insulin that are most commonly used. They’re differentiated by how quickly they start to work, and how long their effects last:\n  -Rapid-acting insulin starts to work within 15 minutes and its effects last for 3 to 4 hours.\n  -Short-acting insulin starts to work within 30 minutes and lasts 6 to 8 hours.\n  -Intermediate-acting insulin starts to work within 1 to 2 hours and lasts 12 to 18 hours.\n  -Long-acting insulin starts to work a few hours after injection and lasts 24 hours or longer."
+        ],
+    "context" : [""]
+    },
     {"tag" : "bot_challenge",
     "patterns" : 
         [
