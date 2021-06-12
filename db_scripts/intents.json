@@ -96,6 +96,24 @@
         ],
      "context": [""]
     },
+    {"tag" : "define_diabetes",
+    "patterns" : 
+        [
+            "what is diabetes",
+            "define diabetes", 
+            "what's the meaning of diabetes", 
+            "is diabetes chronic", 
+            "what does diabetes mean", 
+            "is diabetes a lifelong disease",
+            "is diabetes a disease"
+        ],
+    "responses" : 
+        [
+            "Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy.\nMost of the food you eat is broken down into sugar (also called glucose) and released into your bloodstream. When your blood sugar goes up, it signals your pancreas to release insulin. Insulin acts like a key to let the blood sugar into your body’s cells for use as energy.\nIf you have diabetes, your body either doesn’t make enough insulin or can’t use the insulin it makes as well as it should. When there isn’t enough insulin or cells stop responding to insulin, too much blood sugar stays in your bloodstream. Over time, that can cause serious health problems, such as heart disease, vision loss, and kidney disease.\nThere isn’t a cure yet for diabetes, but losing weight, eating healthy food, and being active can really help. Taking medicine as needed, getting diabetes self-management education and support, and keeping health care appointments can also reduce the impact of diabetes on your life.",
+            "Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces. Insulin is a hormone that regulates blood sugar. Hyperglycaemia, or raised blood sugar, is a common effect of uncontrolled diabetes and over time leads to serious damage to many of the body's systems, especially the nerves and blood vessels.","Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy. Sometimes your body doesn’t make enough—or any—insulin or doesn’t use insulin well. Glucose then stays in your blood and doesn’t reach your cells.\nOver time, having too much glucose in your blood can cause health problems. Although diabetes has no cure, you can take steps to manage your diabetes and stay healthy.\nSometimes people call diabetes “a touch of sugar” or “borderline diabetes.” These terms suggest that someone doesn’t really have diabetes or has a less serious case, but every case of diabetes is serious."
+        ],
+    "context" : [""]
+    },
     {"tag": "get_diabetes_types",
     "patterns" : 
         [
@@ -160,23 +178,94 @@
         ],
     "context" : [""]
     },
-    {"tag" : "define_diabetes",
-    "patterns" : 
+    {"tag": "define_type1_diabetes",
+    "patterns": 
         [
-            "what is diabetes",
-            "define diabetes", 
-            "what's the meaning of diabetes", 
-            "is diabetes chronic", 
-            "what does diabetes mean", 
-            "is diabetes a lifelong disease",
-            "is diabetes a disease"
+            "what is Type 1 Diabetes","define type 1 diabetes","what is Type 1","can you explain type 1 diabetes"
         ],
-    "responses" : 
+    "responses": 
         [
-            "Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy.\nMost of the food you eat is broken down into sugar (also called glucose) and released into your bloodstream. When your blood sugar goes up, it signals your pancreas to release insulin. Insulin acts like a key to let the blood sugar into your body’s cells for use as energy.\nIf you have diabetes, your body either doesn’t make enough insulin or can’t use the insulin it makes as well as it should. When there isn’t enough insulin or cells stop responding to insulin, too much blood sugar stays in your bloodstream. Over time, that can cause serious health problems, such as heart disease, vision loss, and kidney disease.\nThere isn’t a cure yet for diabetes, but losing weight, eating healthy food, and being active can really help. Taking medicine as needed, getting diabetes self-management education and support, and keeping health care appointments can also reduce the impact of diabetes on your life.",
-            "Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces. Insulin is a hormone that regulates blood sugar. Hyperglycaemia, or raised blood sugar, is a common effect of uncontrolled diabetes and over time leads to serious damage to many of the body's systems, especially the nerves and blood vessels.","Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is too high. Blood glucose is your main source of energy and comes from the food you eat. Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to be used for energy. Sometimes your body doesn’t make enough—or any—insulin or doesn’t use insulin well. Glucose then stays in your blood and doesn’t reach your cells.\nOver time, having too much glucose in your blood can cause health problems. Although diabetes has no cure, you can take steps to manage your diabetes and stay healthy.\nSometimes people call diabetes “a touch of sugar” or “borderline diabetes.” These terms suggest that someone doesn’t really have diabetes or has a less serious case, but every case of diabetes is serious."
+            "Understanding type 1\n\nIn type 1 diabetes, the body does not produce insulin. The body breaks down the carbohydrates you eat into blood sugar (blood glucose) that it uses for energy—and insulin is a hormone that the body needs to get glucose from the bloodstream into the cells of the body. With the help of insulin therapy and other treatments, everyone can learn to manage their condition and live long, healthy lives.","Type 1 diabetes is thought to be caused by an autoimmune reaction (the body attacks itself by mistake) that stops your body from making insulin. Approximately 5-10% of the people who have diabetes have type 1. Symptoms of type 1 diabetes often develop quickly. It’s usually diagnosed in children, teens, and young adults. If you have type 1 diabetes, you’ll need to take insulin every day to survive. Currently, no one knows how to prevent type 1 diabetes.","Type 1 diabetes (previously known as insulin-dependent, juvenile or childhood-onset) is characterized by deficient insulin production and requires daily administration of insulin. Neither the cause of Type 1 diabetes nor the means to prevent it are known.\nSymptoms include excessive excretion of urine (polyuria), thirst (polydipsia), constant hunger, weight loss, vision changes, and fatigue. These symptoms may occur suddenly."
         ],
-    "context" : [""]
+    "context": [""]
+    },
+    {"tag": "define_type2_diabetes",
+    "patterns": 
+        [
+            "what is Type 2 Diabetes","define type 2 diabetes","what is Type 2","can you explain type 2 diabetes"
+        ],
+    "responses": 
+        [
+            "Understanding type 2:\n\nType 2 diabetes is the most common form of diabetes—and it means that your body doesn’t use insulin properly. And while some people can control their blood sugar levels with healthy eating and exercise, others may need medication or insulin to help manage it. Regardless, you have options—and we're here with the tools, resources, and support you need.\nA key part of managing type 2 diabetes is maintaining a healthy diet. You need to eat something sustainable that helps you feel better and still makes you feel happy and fed. Remember, it’s a process. Work to find helpful tips and diet plans that best suit your lifestyle—and how you can make your nutritional intake work the hardest for you.\nFitness is another key to managing type 2. And the good news, all you have to do is get moving. The key is to find activities you love and do them as often as you can. No matter how fit you are, a little activity every day can help you put yourself in charge of your life.","Type 2 Diabetes:\nWith type 2 diabetes, your body doesn’t use insulin well and can’t keep blood sugar at normal levels. About 90-95% of people with diabetes have type 2. It develops over many years and is usually diagnosed in adults (but more and more in children, teens, and young adults). You may not notice any symptoms, so it’s important to get your blood sugar tested if you’re at risk. Type 2 diabetes can be prevented or delayed with healthy lifestyle changes, such as losing weight, eating healthy food, and being active.","Type 2 diabetes:\n\nType 2 diabetes (formerly called non-insulin-dependent, or adult-onset) results from the body’s ineffective use of insulin. The majority of people with diabetes have type 2 diabetes. This type of diabetes is largely the result of excess body weight and physical inactivity.\nSymptoms may be similar to those of type 1 diabetes, but are often less marked. As a result, the disease may be diagnosed several years after onset, after complications have already arisen.\nUntil recently, this type of diabetes was seen only in adults but it is now also occurring increasingly frequently in children."
+        ],
+    "context": [""]
+    },
+    {"tag": "define_gestational_diabetes",
+    "patterns": 
+        [
+            "what is gestational diabetes",
+            "define gestational diabetes",
+            "what is Type 2","can you explain type 2 diabetes"
+            ],
+    "responses": 
+        [
+            "Gestational diabetes can be a scary diagnosis, but like other forms of diabetes, it’s one that you can manage. It doesn’t mean that you had diabetes before you conceived or that you will have diabetes after you give birth. It means that, by working with your doctor, you can have a healthy pregnancy and a healthy baby. No matter what, know that you have all the support you need for both you and your baby to be at your best.\nWe don’t know what causes gestational diabetes, but we know that you are not alone. It happens to millions of women. We do know that the placenta supports the baby as it grows. Sometimes, these hormones also block the action of the mother’s insulin to her body and it causes a problem called insulin resistance. This insulin resistance makes it hard for the mother’s body to use insulin. And this means that she may need up to three times as much insulin to compensate.\nThe key to treating it is to act quickly—as treatable as it is, gestational diabetes can hurt you and your baby.","Gestational Diabetes:\nGestational diabetes develops in pregnant women who have never had diabetes. If you have gestational diabetes, your baby could be at higher risk for health problems. Gestational diabetes usually goes away after your baby is born but increases your risk for type 2 diabetes later in life. Your baby is more likely to have obesity as a child or teen, and more likely to develop type 2 diabetes later in life too.","Gestational diabetes:\n\nGestational diabetes is hyperglycaemia with blood glucose values above normal but below those diagnostic of diabetes. Gestational diabetes occurs during pregnancy.\nWomen with gestational diabetes are at an increased risk of complications during pregnancy and at delivery. These women and possibly their children are also at increased risk of type 2 diabetes in the future.\nGestational diabetes is diagnosed through prenatal screening, rather than through reported symptoms."
+        ],
+    "context": [""]
+    },
+    {"tag": "define_prediabetes",
+    "patterns": 
+        [
+            "what is Prediabetes",
+            "define prediabetes",
+            "can you explain prediabetes", 
+            "what is the meaning of prediabetes",
+            "what does prediabetes mean"
+        ],
+    "responses": ["When it comes to prediabetes, there are no clear symptoms—so you may have it and not know it. Here’s why that’s important: before people develop type 2 diabetes, they almost always have prediabetes—blood sugar levels that are higher than normal but not yet high enough to be diagnosed as diabetes. You may have some of the symptoms of diabetes or even some of the complications.\nRegardless, check with your doctor and get tested. If you discover that you do have prediabetes, remember that it doesn’t mean you’ll develop type 2, particularly if you follow a treatment plan and a diet and exercise routine. Even small changes can have a huge impact on managing diabetes or preventing it all together—so get to a doctor today and get tested.","Prediabetes:\nIn the United States, 88 million adults—more than 1 in 3—have prediabetes. What’s more, more than 84% of them don’t know they have it. With prediabetes, blood sugar levels are higher than normal, but not high enough yet to be diagnosed as type 2 diabetes. Prediabetes raises your risk for type 2 diabetes, heart disease, and stroke.","Prediabetes:\n\nWhen it comes to prediabetes, there are no clear symptoms—so you may have it and not know it. Here’s why that’s important: before people develop type 2 diabetes, they almost always have prediabetes—blood sugar levels that are higher than normal but not yet high enough to be diagnosed as diabetes. You may have some of the symptoms of diabetes or even some of the complications.\nRegardless, check with your doctor and get tested. If you discover that you do have prediabetes, remember that it doesn’t mean you’ll develop type 2, particularly if you follow a treatment plan and a diet and exercise routine. Even small changes can have a huge impact on managing diabetes or preventing it all together—so get to a doctor today and get tested."],
+    "context": [""]
+    },
+    {"tag": "type1_risk_factors",
+    "patterns": 
+        ["what are the risks that may lead to type 1 diabetes","what are the risk factors for type 1 diabetes", "what are the factors for type 1 diabetes","What Increases My Risk of type 1 Diabetes"],
+    "responses": 
+        [
+            "Type 1 diabetes is thought to be caused by an immune reaction (the body attacks itself by mistake). Risk factors for type 1 diabetes are not as clear as for prediabetes and type 2 diabetes. Known risk factors include:\n    Family history: Having a parent, brother, or sister with type 1 diabetes.\n    Age: You can get type 1 diabetes at any age, but it’s more likely to develop when you’re a child, teen, or young adult.\nIn the United States, whites are more likely to develop type 1 diabetes than African Americans and Hispanic/Latino Americans.\nCurrently, no one knows how to prevent type 1 diabetes.","Type 1\n\nThis type usually starts in childhood. Your pancreas stops making insulin. You have type 1 diabetes for life. The main things that lead to it are:\n  Family history. If you have relatives with diabetes, chances are higher that you’ll get it, too. Anyone who has a mother, father, sister, or brother with type 1 diabetes should get checked. A simple blood test can diagnose it.\n  Diseases of the pancreas. They can slow its ability to make insulin.\n  Infection or illness. Some infections and illnesses, mostly rare ones, can damage your pancreas.","Some known risk factors for type 1 diabetes include:\n  Family history. Anyone with a parent or sibling with type 1 diabetes has a slightly increased risk of developing the condition.\n  Genetics. The presence of certain genes indicates an increased risk of developing type 1 diabetes.\n  Geography. The incidence of type 1 diabetes tends to increase as you travel away from the equator.\n  Age. Although type 1 diabetes can appear at any age, it appears at two noticeable peaks. The first peak occurs in children between 4 and 7 years old, and the second is in children between 10 and 14 years old."
+        ],
+    "context": [""]
+    },
+    {"tag": "type2_risk_factors",
+    "patterns": 
+        [
+            "what are the risks that may lead to type 2 diabetes","what are the risk factors for type 2 diabetes", "what are the factors for type 2 diabetes","What Increases My Risk of type 2 Diabetes"
+        ],
+    "responses": 
+        [
+            "If you have this kind, your body can't use the insulin it makes. This is called insulin resistance. Type 2 usually affects adults, but it can begin at any time in your life. The main things that lead to it are:\n  Obesity or being overweight. Research shows this is a top reason for type 2 diabetes. Because of the rise in obesity among U.S. children, this type is affecting more teenagers.\n  Impaired glucose tolerance.Prediabetes is a milder form of this condition. It can be diagnosed with a simple blood test. If you have it, there’s a strong chance you’ll get type 2 diabetes.\n  Insulin resistance.Type 2 diabetes often starts with cells that are resistant to insulin. That means your pancreas has to work extra hard to make enough insulin to meet your body's needs.\n  Ethnic background. Diabetes happens more often in Hispanic/Latino Americans, African-Americans, Native Americans, Asian-Americans, Pacific Islanders, and Alaska natives.\n  Gestational diabetes. If you had diabetes while you were pregnant, you had gestational diabetes. This raises your chances of getting type 2 diabetes later in life.\n  Sedentary lifestyle. You exercise less than three times a week.\n  Family history. You have a parent or sibling who has diabetes.\n  Polycystic ovary syndrome. Women with polycystic ovary syndrome (PCOS) have a higher risk.\n  Age. If you're over 45 and overweight or if you have symptoms of diabetes, talk to your doctor about a simple screening test.","Type 2 Diabetes\n\nYou’re at risk for developing type 2 diabetes if you:\n  Have prediabetes\n  Are overweight\n  Are 45 years or older\n  Have a parent, brother, or sister with type 2 diabetes\n  Are physically active less than 3 times a week\n  Have ever had gestational diabetes (diabetes during pregnancy) or given birth to a baby who weighed more than 9 pounds\n  Are African American, Hispanic/Latino American, American Indian, or Alaska Native (some Pacific Islanders and Asian Americans are also at higher risk)\n\nIf you have non-alcoholic fatty liver disease you may also be at risk for type 2 diabetes.\n\nYou can prevent or delay type 2 diabetes with simple, proven lifestyle changes such as losing weight if you’re overweight, eating healthier, and getting regular physical activity.","Factors that may increase your risk of type 2 diabetes include:\n  Weight. Being overweight or obese is a main risk.\n  Fat distribution. Storing fat mainly in your abdomen — rather than your hips and thighs — indicates a greater risk. Your risk of type 2 diabetes rises if you're a man with a waist circumference above 40 inches (101.6 centimeters) or a woman with a measurement above 35 inches (88.9 centimeters).\n  Inactivity. The less active you are, the greater your risk. Physical activity helps control your weight, uses up glucose as energy and makes your cells more sensitive to insulin.\n  Family history. The risk of type 2 diabetes increases if your parent or sibling has type 2 diabetes.\n  Race and ethnicity. Although it's unclear why, people of certain races and ethnicities — including Black, Hispanic, Native American and Asian people, and Pacific Islanders — are more likely to develop type 2 diabetes than white people are.\n  Blood lipid levels. An increased risk is associated with low levels of high-density lipoprotein (HDL) cholesterol — the \"good\" cholesterol — and high levels of triglycerides.\n  Age. The risk of type 2 diabetes increases as you get older, especially after age 45.\n  Prediabetes. Prediabetes is a condition in which your blood sugar level is higher than normal, but not high enough to be classified as diabetes. Left untreated, prediabetes often progresses to type 2 diabetes.\n  Pregnancy-related risks. Your risk of developing type 2 diabetes increases if you developed gestational diabetes when you were pregnant or if you gave birth to a baby weighing more than 9 pounds (4 kilograms).\n  Polycystic ovary syndrome. Having polycystic ovary syndrome — a common condition characterized by irregular menstrual periods, excess hair growth and obesity — increases the risk of diabetes\n  Areas of darkened skin, usually in the armpits and neck. This condition often indicates insulin resistance."
+        ],
+    "context": [""]
+    },
+    {"tag": "prediabetes_risk_factors",
+    "patterns": 
+        [
+            "what are the risks that may lead to Prediabetes","what are the risk factors for Prediabetes", "what are the factors for Prediabetes","What Increases My Risk of Prediabetes"
+        ],
+    "responses": 
+        [
+            "The same factors that increase the odds of getting type 2 diabetes also increase the risk of prediabetes. ","There are many factors you can control. Prediabetes is a condition that can lead to type 2 diabetes and even heart disease. Your chances of having prediabetes go up if you:\n\nAre 45 or older\nAre Black, Hispanic/Latino, American Indian, Asian American or Pacific Islander\nHave a parent, brother or sister with diabetes\nAre overweight\nAre physically inactive\nHave high blood pressure or take medicine for high blood pressure\nHave low HDL cholesterol and/or high triglycerides\nHad diabetes during pregnancy\nHave been diagnosed with polycystic ovary syndrome.","Prediabetes\n\nYou’re at risk for developing prediabetes if you:\n  Are overweight\n  Are 45 years or older\n  Have a parent, brother, or sister with type 2 diabetes\n  Are physically active less than 3 times a week\n  Have ever had gestational diabetes (diabetes during pregnancy) or given birth to a baby who weighed more than 9 pounds\n  Are African American, Hispanic/Latino American, American Indian, or Alaska Native (some Pacific Islanders and Asian Americans are also at higher risk)\nYou can prevent or reverse prediabetes with simple, proven lifestyle changes such as losing weight if you’re overweight, eating healthier, and getting regular physical activity. The CDC-led National Diabetes Prevention Program can help you make healthy changes that have lasting results."
+        ],
+    "context": [""]
+    },
+    {"tag": "gestational_diabetes_risk_factors",
+    "patterns": 
+        [
+            "what are the risks that may lead to Gestational diabetes","what are the risk factors for Gestational diabetes", "what are the factors for Gestational diabetes","What Increases My Risk of Gestational diabetes"
+        ],
+    "responses": 
+        [
+            "Gestational Diabetes\n\nYou’re at risk for developing gestational diabetes (diabetes while pregnant) if you:\n  Had gestational diabetes during a previous pregnancy\n  Have given birth to a baby who weighed more than 9 pounds\n  Are overweight\n  Are more than 25 years old\n  Have a family history of type 2 diabetes\n  Have a hormone disorder called polycystic ovary syndrome (PCOS)\n  Are African American, Hispanic/Latino American, American Indian, Alaska Native, Native Hawaiian, or Pacific Islander\n\nGestational diabetes usually goes away after your baby is born but increases your risk for type 2 diabetes later in life. Your baby is more likely to have obesity as a child or teen, and is more likely to develop type 2 diabetes later in life too.\n\nBefore you get pregnant, you may be able to prevent gestational diabetes by losing weight if you’re overweight, eating healthier, and getting regular physical activity.","Gestational\n\nDiabetes when you’re expecting affects about 4% of all U.S. pregnancies. It's caused by hormones the placenta makes or by too little insulin. High blood sugar from the mother causes high blood sugar in the baby. That can lead to growth and development problems if left untreated. Things that can lead to gestational diabetes include:\n  Obesity or being overweight. Extra pounds can lead to gestational diabetes.\n  Glucose intolerance. Having glucose intolerance or gestational diabetes in the past makes you more likely to get it again.\n  Family history. If a parent or sibling has had gestational diabetes, you're more likely to get it.\n  Age. The older you are when you get pregnant, the higher your chances are.\n  Ethnic background. Nonwhite women have a greater chance of developing it.","Some women have a greater risk of gestational diabetes. Risk factors for gestational diabetes include the following:\n  Overweight and obesity.\n  A lack of physical activity.\n  Previous gestational diabetes or prediabetes.\n  Polycystic ovary syndrome.\n  Diabetes in an immediate family member.\n  Previously delivering a baby weighing more than 9 pounds (4.1 kilograms).\n  Race — Women who are Black, Hispanic, American Indian and Asian American have a higher risk of developing gestational diabetes."
+        ],
+    "context": [""]
     },
     {"tag" : "define_hypoglycemia",
     "patterns" : 
@@ -341,20 +430,6 @@
     "responses" : 
         [
             "You are considered to have diabetes when either :\n  -your A1C test is 6.5% or greater \n  -your fasting blood glucose is 126 mg/dl or greater \n  -your oral glucose tolerance test is 200 mg/dl or greater"
-        ],
-    "context" : [""]
-    },
-    {"tag" : "bot_challenge",
-    "patterns" : 
-        [
-            "are you a bot?",
-            "are you a human?",
-            "am I talking to a bot?",
-            "am I talking to a human?"
-        ],
-    "responses" : 
-        [
-            "I am a Melli, a chatbot"
         ],
     "context" : [""]
     },
