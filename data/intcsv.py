@@ -1,7 +1,7 @@
 import json
 import pandas as pd
 
-datafile = open('data/intents.json')
+datafile = open('intents.json')
 
 intents = json.load(datafile)
 
@@ -18,4 +18,4 @@ for ele in intents['intents']:
 
 fulldata = pd.DataFrame.from_dict(dc)
 
-fulldata.to_csv("data/intents.csv", index=False)
+fulldata.to_csv("intents.csv", index=False)
