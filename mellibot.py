@@ -94,11 +94,11 @@ def send( msg):
         
     if msg != '':
         ChatLog.config(state=NORMAL)
-        ChatLog.insert(END, "You : " + msg + '\n')
+        ChatLog.insert(END, "You : " + msg + '\n\n')
         ChatLog.config(foreground="#010101", font=("Verdana", 12, font.BOLD))
             
         res = chatbot_response(msg)
-        ChatLog.insert(END, "MelliBot : " + res + '\n')
+        ChatLog.insert(END, "MelliBot : " + res + '\n\n')
             
         ChatLog.config(state=DISABLED)
         ChatLog.yview(END) 
