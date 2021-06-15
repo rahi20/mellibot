@@ -1,0 +1,7 @@
+{"rules": [
+    {
+        "intent" : "locate_endocrino",
+        "action" : "fetchendocrino"
+    }
+]
+}
